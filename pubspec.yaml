@@ -1,0 +1,51 @@
+name: viajando_con_marta
+description: "Viajando con Marta - App de viajes solidarios"
+publish_to: 'none'
+
+version: 1.0.0+4
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^5.2.1
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.4.1
+  image_picker: ^1.2.0
+  url_launcher: ^6.3.0
+  dio: ^5.6.0
+  photo_manager: ^3.7.1
+  firebase_core: ^4.1.0
+  firebase_auth: ^6.0.2
+  cloud_firestore: ^6.0.1
+  firebase_storage: ^13.0.1
+  firebase_messaging: ^16.0.1
+  permission_handler: ^12.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  min_sdk_android: 21
+
+  # Base para iOS y Android "legacy" (opaco, sin transparencia)
+  image_path: assets/icons/app_icon_ios.png
+  remove_alpha_ios: true
+
+  # Android Adaptive Icon (foreground TRANSPARENTE con margen)
+  adaptive_icon_background: "#F3E5D0"
+  adaptive_icon_foreground: assets/icons/app_icon_foreground.png
